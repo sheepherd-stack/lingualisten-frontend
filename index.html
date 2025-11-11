@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LinguaListen</title>
+    <style>
+      :root{ --accent:#FF8C3A; --bg:#fff9f4; --text:#2a2a2a; }
+      body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);}
+      .container{max-width:960px;margin:0 auto;padding:24px;}
+      .nav{display:flex;gap:12px;align-items:center;justify-content:space-between;border-bottom:1px solid #eee;padding-bottom:12px;margin-bottom:16px;}
+      .brand{font-weight:800;color:var(--accent);letter-spacing:.3px}
+      .btn{background:var(--accent);color:white;padding:10px 14px;border-radius:12px;border:none;font-weight:600;cursor:pointer}
+      .card{background:white;border:1px solid #eee;border-radius:16px;padding:16px;box-shadow:0 4px 14px rgba(255,140,58,.08)}
+      .muted{color:#666}
+      input, textarea, select{width:100%;padding:10px 12px;border-radius:10px;border:1px solid #ddd;outline:none}
+      .grid{display:grid;gap:16px;grid-template-columns:1fr}
+      @media(min-width:800px){ .grid{grid-template-columns:1fr 1fr} }
+      .pill{display:inline-block;padding:4px 10px;border-radius:999px;background:#ffe5d2;color:#b85c16;font-size:12px;font-weight:700}
+      .link{color:var(--accent);cursor:pointer;text-decoration:underline}
+      .footer{margin-top:40px;color:#888;font-size:12px;text-align:center}
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
